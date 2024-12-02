@@ -11,20 +11,18 @@ This project enhances Vimeo video delivery by creating dynamic playlists. Users 
 
 ## Features
 
-* **Criteria Selection:** Dynamically loads the featured video and related videos based on the chosen criteria.
+* **Criteria Selection:** Dynamically loads the featured video and related videos based on the chosen criteria. See Figure 1 for a diagram of a multi-language criteria selection UI.
 * **Featured Video:** Prominently displays the currently playing video.
 * **Thumbnail Grid:** Showcases related videos for easy browsing.
 * **Featured Video Thumbnail:** A dedicated thumbnail for quick access to the initially selected video.
 
-See Figure 1 for a diagram of the logical UI;
+<img width="256" align="center" src="https://github.com/user-attachments/assets/81d358d3-cba5-4f0c-8293-56dbc60a5122">
 
-
-  <img width="256" align="center" alt="image" src="https://github.com/user-attachments/assets/81d358d3-cba5-4f0c-8293-56dbc60a5122">
 <p align="left">Figure 1. Diagram of a multi-language criteria selection UI.</p>
 
 ## Technical Implementation
 
-This project leverages the Vimeo API to overcome limitations of Vimeo Showcases, such as the restriction of one event per showcase and the lack of API methods for dynamic content updates. See Figure 2 for a diagram of the workflow.
+This project leverages the Vimeo API to overcome limitations of Vimeo Showcases, such as the restriction of one event per showcase and the lack of API methods for dynamic content updates. See Figure 2 for a diagram of the implementation logic workflow.
 
 ## Sequence Diagram 
 
