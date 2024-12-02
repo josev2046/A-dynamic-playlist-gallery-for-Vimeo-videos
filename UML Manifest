@@ -1,0 +1,44 @@
+
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 10
+skinparam participantFontName Helvetica
+skinparam participantFontSize 14
+actor "User" as user
+participant "Web Page" as page
+participant "Vimeo API" as api
+
+user -> page : Select criteria (e.g., topic, keyword)
+activate page
+
+page -> page : **changeFeaturedVideo()**
+activate page
+
+page -> api : Fetch featured video data\n(video ID, thumbnail)
+activate api
+api --> page : Featured video data
+deactivate api
+
+page -> page : Update featured video player
+
+page -> api : Fetch video data based on criteria\n(video IDs, thumbnails)
+activate api
+api --> page : Video data
+deactivate api
+
+page -> page : Display video thumbnails
+deactivate page
+
+user -> page : Click video thumbnail
+activate page
+
+page -> page : **handleThumbnailClick()**
+activate page
+
+page -> page : Determine video source (live or VOD)
+page -> page : Update featured video player
+page -> page : Update thumbnail grid
+deactivate page
+deactivate page
+
+@enduml
