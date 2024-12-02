@@ -24,10 +24,10 @@ This project enhances Vimeo video delivery by creating a dynamic playlist galler
 
 This prototype leverages the Vimeo API to overcome limitations of Vimeo Showcases, such as the restriction of one event per showcase and the lack of API methods for dynamic content updates. See Figure 2 for a diagram of the implementation logic workflow.
 
-## Sequence Diagram 
+## UML Workflow
 
 ![image](https://github.com/user-attachments/assets/26651cb2-38b2-4d3a-8ee9-0c372488a945)
-<p align="left">Figure 2. Logic workflow.</p>
+<p align="left">Figure 2. UML Sequence Diagram .</p>
 
 **Key aspects:**
 
