@@ -18,7 +18,7 @@ This project enhances Vimeo video delivery by creating a dynamic playlist galler
 
 <img width="256" align="center" src="https://github.com/user-attachments/assets/81d358d3-cba5-4f0c-8293-56dbc60a5122">
 
-<p align="left">Figure 1. Diagram of a multi-language criteria selection UI.</p>
+<p align="left">Figure 1. Wireframe of a multi-language criteria selection UI.</p>
 
 The following short video shows the solution in action:
 
