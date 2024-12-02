@@ -2,7 +2,7 @@
 
 This project enhances Vimeo video delivery by creating a dynamic playlist gallery where users can:
 
-* Select **any criteria** (e.g., topic, keyword, genre) to view relevant live events and videos.
+* Select **any criteria** (e.g., topic, keyword, etc) to view relevant live events and videos.
 * Immediately engage with a featured video upon page load.
 * Browse and choose from related videos in a thumbnail grid.
 * Seamlessly switch between videos by clicking thumbnails.
