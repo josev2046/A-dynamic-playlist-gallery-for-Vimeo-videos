@@ -22,7 +22,7 @@ This project enhances Vimeo video delivery by creating a dynamic playlist galler
 
 ## Technical Implementation
 
-This project leverages the Vimeo API to overcome limitations of Vimeo Showcases, such as the restriction of one event per showcase and the lack of API methods for dynamic content updates. See Figure 2 for a diagram of the implementation logic workflow.
+This prototype leverages the Vimeo API to overcome limitations of Vimeo Showcases, such as the restriction of one event per showcase and the lack of API methods for dynamic content updates. See Figure 2 for a diagram of the implementation logic workflow.
 
 ## Sequence Diagram 
 
