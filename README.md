@@ -16,8 +16,11 @@ This project enhances Vimeo video delivery by creating dynamic playlists. Users 
 * **Thumbnail Grid:** Showcases related videos for easy browsing.
 * **Featured Video Thumbnail:** A dedicated thumbnail for quick access to the initially selected video.
 
-  <img width="256" alt="image" src="https://github.com/user-attachments/assets/81d358d3-cba5-4f0c-8293-56dbc60a5122">
+See Figure 1 for a diagram of the logical UI;
+See Figure 2 for a diagram of the workflow.
 
+  <img width="256" align="center" alt="image" src="https://github.com/user-attachments/assets/81d358d3-cba5-4f0c-8293-56dbc60a5122">
+<p align="center">Figure 1. Diagram of a multi-language criteria selection UI.</p>
 
 ## Technical Implementation
 
@@ -26,7 +29,7 @@ This project leverages the Vimeo API to overcome limitations of Vimeo Showcases,
 ## Sequence Diagram 
 
 ![image](https://github.com/user-attachments/assets/26651cb2-38b2-4d3a-8ee9-0c372488a945)
-
+<p align="center">Figure 2. Logic workflow.</p>
 
 **Key aspects:**
 
