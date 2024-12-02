@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Vimeo Playlists</title>
+  <style>
+    /* ... (Your CSS style) ... */ 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <select id="criteriaSelect" onchange="changeFeaturedVideo()">
+      <option value="criteria1">Criteria 1</option> 
+      <option value="criteria2">Criteria 2</option>
+      <option value="criteria3">Criteria 3</option> 
+    </select>
+
+    <div class="featured-video">
+      <div id="featuredIframe"></div>
+    </div>
+
+    <div class="video-grid" id="videoGrid"></div>
+  </div>
+
+  <script>
+    const access_token = "{YOUR_VIMEO_ACCESS_TOKEN}"; // Replace with your actual access token 
+
+    // Replace with your actual video IDs and organize them by criteria
+    const videoData = {
+      "criteria1": {
+        featuredVideoId: "VIDEO_ID_1", 
+        relatedVideoIds: ["VIDEO_ID_2", "VIDEO_ID_3", "VIDEO_ID_4"] 
+      },
+      "criteria2": { 
+        featuredVideoId: "VIDEO_ID_5",
+        relatedVideoIds: ["VIDEO_ID_6", "VIDEO_ID_7", "VIDEO_ID_8"] 
+      },
+      "criteria3": { 
+        featuredVideoId: "VIDEO_ID_9",
+        relatedVideoIds: ["VIDEO_ID_10", "VIDEO_ID_11", "VIDEO_ID_12"] 
+      }
+      // ... add more criteria as needed
+    };
+
+    async function changeFeaturedVideo() {
+      const criteria = document.getElementById('criteriaSelect').value;
+      const featuredIframe = document.getElementById('featuredIframe');
+      const videoGrid = document.getElementById('videoGrid');
+
+      try {
+        // 1. Update the featured video
+        featuredIframe.innerHTML = '';
+        const videoIframe = document.createElement('iframe');
+        
+        // Determine if it's a live event or VOD based on your videoData structure
+        let videoId = videoData[criteria].featuredVideoId;
+        let sourceUrl = videoId.startsWith('live-') 
+          ? `https://vimeo.com/event/${videoId.replace('live-', '')}/embed?autoplay=1`
+          : `https://player.vimeo.com/video/${videoId}?autoplay=1`;
+
+        videoIframe.src = sourceUrl;
+        videoIframe.frameBorder = '0';
+        videoIframe.allow = 'autoplay; fullscreen; picture-in-picture';
+        videoIframe.allowFullscreen = true;
+        videoIframe.dataset.videoId = videoId;
+        featuredIframe.appendChild(videoIframe);
+
+        // 2. Update the video grid 
+        videoGrid.innerHTML = '';
+
+        // Add the featured video thumbnail (you can customize the image source)
+        const featuredVideoItem = document.createElement('div');
+        featuredVideoItem.classList.add('video-item');
+        featuredVideoItem.dataset.videoId = videoId;
+
+        const featuredVideoThumbnail = document.createElement('img');
+        featuredVideoThumbnail.src = 'placeholder.png'; // Replace with actual thumbnail or a generic image
+        featuredVideoThumbnail.classList.add('video-thumbnail');
+        featuredVideoThumbnail.alt = "Featured Video"; 
+        featuredVideoThumbnail.style.width = '100%';
+        featuredVideoThumbnail.style.height = 'auto';
+        featuredVideoItem.appendChild(featuredVideoThumbnail);
+        videoGrid.appendChild(featuredVideoItem);
+
+        featuredVideoThumbnail.addEventListener('click', () => {
+          handleThumbnailClick(featuredVideoThumbnail);
+        });
+
+        // Add related videos to the grid (replace with your actual logic to get thumbnails)
+        videoData[criteria].relatedVideoIds.forEach(videoId => {
+          const videoItem = document.createElement('div');
+          videoItem.classList.add('video-item');
+          videoItem.dataset.videoId = videoId;
+
+          const thumbnailImg = document.createElement('img');
+          thumbnailImg.src = `https://i.vimeocdn.com/video/VIDEO_THUMBNAIL_ID.jpg`; // Replace with actual thumbnail URLs
+          // ... (rest of the thumbnail setup remains the same) ...
+        }); 
+
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
+
+    // ... (handleThumbnailClick() function remains the same) ...
+
+    // Initial video load
+    changeFeaturedVideo();
+  </script>
+</body>
+</html>
