@@ -11,7 +11,7 @@ This project enhances Vimeo video delivery by creating a dynamic playlist galler
 
 ## Features
 
-* **Criteria Selection:** Dynamically loads the featured video and related videos based on the chosen criteria. See Figure 1 for a diagram of a multi-language criteria selection UI.
+* **Criteria Selection:** Dynamically loads the featured video and related videos based on the chosen criteria. See Figure 1 for a wireframe of a multi-language criteria selection UI.
 * **Featured Video:** Prominently displays the currently playing video.
 * **Thumbnail Grid:** Showcases related videos for easy browsing.
 * **Featured Video Thumbnail:** A dedicated thumbnail for quick access to the initially selected video.
