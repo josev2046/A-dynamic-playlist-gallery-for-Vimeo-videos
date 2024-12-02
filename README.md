@@ -30,7 +30,7 @@ https://github.com/user-attachments/assets/98cb2a50-81a4-43a3-b0fb-6f7f5d4746a6
 
 ## Technical Implementation
 
-This prototype leverages the Vimeo API to overcome limitations of Vimeo Showcases, such as the restriction of one event per showcase and the lack of API methods for dynamic content updates. See Figure 2 for a diagram of the implementation logic workflow.
+This prototype leverages the Vimeo API to overcome limitations of Vimeo Showcases, such as the restriction of one event per showcase and the lack of programmatic content updates. See Figure 2 for a diagram of the implementation logic workflow.
 
 ## UML Workflow
 
