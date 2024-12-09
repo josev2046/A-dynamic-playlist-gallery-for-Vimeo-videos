@@ -43,7 +43,7 @@ Key aspects of the workflow are as follows:
 To get started with the gallery in your own projects:
 
 1. **Clone the repository** by running the following: `git clone https://github.com/your-username/Dynamic-Playlists-for-Vimeo.git`
-2. **Replace the `{TOKEN}`** placeholder in the index.html file with your Vimeo API access token. For more information, see Working with Authentication on the Vimeo developer site.
+2. **Replace the `{TOKEN}`** placeholder in the index.html file with your Vimeo API access token. For more information, see [Working with Authentication](https://developer.vimeo.com/api/authentication) on the Vimeo developer site.
 3. **Modify `index.html`** according to the way that you want to populate the thumbnail grid, maybe with a dropdown menu of preselected criteria for the user to choose from or even a search bar implementation. Make sure to capture the video IDs of the corresponding videos.
 4. **Open `index.html`** in your web browser.
 
