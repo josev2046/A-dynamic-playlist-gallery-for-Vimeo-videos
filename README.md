@@ -16,7 +16,7 @@ https://github.com/user-attachments/assets/98cb2a50-81a4-43a3-b0fb-6f7f5d4746a6
 
 The dynamic playlist gallery offers the following features.
 
-* **Criteria Selection:** The gallery dynamically loads the featured video and related videos based on the chosen criteria. See Figure 1 for a wireframe of the UI; See Figure 2 for a diagram of the implementation logic workflow.
+* **Criteria Selection:** The gallery dynamically loads the featured video and related videos based on the chosen criteria. See Figure 1 for a wireframe of the UI. 
 
 <img width="256" align="center" src="https://github.com/user-attachments/assets/81d358d3-cba5-4f0c-8293-56dbc60a5122">
 <p align="left">Figure 1. Wireframe of a multi-language criteria selection UI.
@@ -25,11 +25,6 @@ The dynamic playlist gallery offers the following features.
 * **Featured Video:** The gallery prominently displays the initially selected video on load and switches videos dynamically as the user requests them.
 * **Thumbnail Grid:** The thumbnail grid showcases related videos for easy browsing. The thumbnail images are dynamically generated. A dedicated thumbnail image representing the original featured video enables the user to return to it quickly.
   
-
-![image](https://github.com/user-attachments/assets/26651cb2-38b2-4d3a-8ee9-0c372488a945)
-<p align="left">Figure 2. UML Sequence Diagram .</p>
-
-
 Key aspects of the workflow are as follows:
 
 
@@ -37,6 +32,10 @@ Key aspects of the workflow are as follows:
 * **The `handleThumbnailClick()` function.** This manages video switching and thumbnail grid updates.
 * **Dynamic Thumbnail Generation.** As mentioned previously, thumbnails are generated dynamically based on the chosen criteria.
 
+See Figure 2 for a diagram of the implementation logic workflow.
+
+![image](https://github.com/user-attachments/assets/26651cb2-38b2-4d3a-8ee9-0c372488a945)
+<p align="left">Figure 2. UML Sequence Diagram .</p>
 
 ## How to use this repo
 
