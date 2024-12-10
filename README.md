@@ -25,7 +25,7 @@ The dynamic playlist gallery offers the following features.
 * **Featured Video:** The gallery prominently displays the initially selected video on load and switches videos dynamically as the user requests them.
 * **Thumbnail Grid:** The thumbnail grid showcases related videos for easy browsing. The thumbnail images are dynamically generated. A dedicated thumbnail image representing the original featured video enables the user to return to it quickly.
   
-Key aspects of the workflow are as follows:
+Key aspects of this solution are as follows:
 
 
 * **The `changeFeaturedVideo()` function.** This fetches and updates the featured video and video grid based on the selected criteria.
