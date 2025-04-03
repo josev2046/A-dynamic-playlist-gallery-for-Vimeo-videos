@@ -1,5 +1,7 @@
 # A dynamic playlist gallery for Vimeo videos
 
+[![DOI](https://zenodo.org/badge/897299615.svg)](https://doi.org/10.5281/zenodo.15130136)
+
 This prototype enhances Vimeo video delivery by creating a dynamic playlist gallery where users can:
 
 * Select any criteria (e.g., topic, keyword, etc) to view relevant live events and videos.
