@@ -1,6 +1,6 @@
 # A dynamic playlist gallery for Vimeo videos
 
-This project enhances Vimeo video delivery by creating a dynamic playlist gallery where users can:
+This prototype enhances Vimeo video delivery by creating a dynamic playlist gallery where users can:
 
 * Select any criteria (e.g., topic, keyword, etc) to view relevant live events and videos.
 * Immediately engage with a featured video upon page load.
